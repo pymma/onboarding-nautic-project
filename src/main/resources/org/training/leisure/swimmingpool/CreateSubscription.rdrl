@@ -1,17 +1,17 @@
 package org.training.leisure.swimmingpool;
 
 import java.lang.Number;
-import org.chtijbug.example.swimmingpool.Subscription;
-import org.chtijbug.example.swimmingpool.Price;
-import org.chtijbug.example.swimmingpool.Period;
-import org.chtijbug.example.swimmingpool.Quote;
+import org.training.leisure.swimmingpool.Subscription;
+import org.training.leisure.swimmingpool.Price;
+import org.training.leisure.swimmingpool.Period;
+import org.training.leisure.swimmingpool.Quote;
 
 rule "CreateSubscription"
 	dialect "mvel"
 	ruleflow-group "subscription"
 	when
 		not (Subscription( )) 
-		Price( priceType == PriceType.definitive , aa : amount != null )
+		Price( priceType == PriceType.definitive.name() , aa : amount != null )
 		Period( dstart : desidedStartDate != null )
 		qq : Quote( )
 	then
