@@ -153,10 +153,10 @@
   <imports>
     <imports>
       <org.drools.workbench.models.datamodel.imports.Import>
-        <type>org.chtijbug.example.swimmingpool.Person</type>
+        <type>org.training.leisure.swimmingpool.Person</type>
       </org.drools.workbench.models.datamodel.imports.Import>
       <org.drools.workbench.models.datamodel.imports.Import>
-        <type>org.chtijbug.example.swimmingpool.Period</type>
+        <type>org.training.leisure.swimmingpool.Period</type>
       </org.drools.workbench.models.datamodel.imports.Import>
     </imports>
   </imports>

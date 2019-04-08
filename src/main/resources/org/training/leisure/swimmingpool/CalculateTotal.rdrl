@@ -2,8 +2,8 @@ package org.training.leisure.swimmingpool;
 
 import java.lang.Number;
 import java.math.BigDecimal;
-import org.chtijbug.example.swimmingpool.Price;
-import org.chtijbug.example.swimmingpool.Person;
+import org.training.leisure.swimmingpool.Price;
+import org.training.leisure.swimmingpool.Person;
 
 rule "CalculateTotal"
 	dialect "mvel"
@@ -24,7 +24,7 @@ rule "CalculateTotal"
 ) 
 	then
 		Price definitivePrice = new Price();
-		definitivePrice.setPriceType( PriceType.definitive );
+		definitivePrice.setPriceType( PriceType.definitive.name() );
 		definitivePrice.setAmount( stdtPrice.subtract(reductValue) );
 		definitivePrice.setDescription( "Final" );
 		insert( definitivePrice );

@@ -1,11 +1,11 @@
 package org.training.leisure.swimmingpool;
 
 import java.lang.Number;
-import org.chtijbug.example.swimmingpool.Person;
+import org.training.leisure.swimmingpool.Person;
 import java.util.List;
-import org.chtijbug.example.swimmingpool.Price;
-import org.chtijbug.example.swimmingpool.CalculatedAttribute;
-import org.chtijbug.example.swimmingpool.PriceType;
+import org.training.leisure.swimmingpool.Price;
+import org.training.leisure.swimmingpool.CalculatedAttribute;
+import org.training.leisure.swimmingpool.PriceType;
 
 rule "YougestUnder3YearsOldFree"
 	dialect "mvel"
@@ -18,7 +18,7 @@ rule "YougestUnder3YearsOldFree"
 	then
 		Price aPrice = new Price();
 		aPrice.setDescription( "YougestOver3YearsOldFree" );
-		aPrice.setPriceType( PriceType.promotion );
+		aPrice.setPriceType( PriceType.promotion.name() );
 		aPrice.setAmount( Sprice );
 		insert( aPrice );
 		CalculatedAttribute fact0 = new CalculatedAttribute();

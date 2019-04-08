@@ -1,8 +1,8 @@
 package org.training.leisure.swimmingpool;
 
 import java.lang.Number;
-import org.chtijbug.example.swimmingpool.Person;
-import org.chtijbug.example.swimmingpool.Quote;
+import org.training.leisure.swimmingpool.Person;
+import org.training.leisure.swimmingpool.Quote;
 
 rule "CalcAgeFromCurrentDate"
 	dialect "mvel"
