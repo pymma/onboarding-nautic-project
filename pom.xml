@@ -6,7 +6,7 @@
   <artifactId>swimmingpool</artifactId>
   <version>1.0.1-SNAPSHOT</version>
   <packaging>kjar</packaging>
-  <name>onboarding-nautic-project</name>
+  <name>nautic</name>
 
   <dependencies>
     <dependency>
