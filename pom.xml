@@ -67,4 +67,14 @@
       </plugin>
     </plugins>
   </build>
+        <distributionManagement>
+        <snapshotRepository>
+            <id>pymma-snapshot</id>
+            <url>https://nexus.pymma-software.com/nexus/content/repositories/pymma-snapshot</url>
+        </snapshotRepository>
+        <repository>
+            <id>pymma-release</id>
+            <url>https://nexus.pymma-software.com/nexus/content/repositories/pymma-release</url>
+        </repository>
+    </distributionManagement>
 </project>
