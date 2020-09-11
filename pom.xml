@@ -18,13 +18,13 @@
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-internal</artifactId>
-      <version>7.19.0.Final</version>
+      <version>7.42.0.Final</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.optaplanner</groupId>
       <artifactId>optaplanner-core</artifactId>
-      <version>7.19.0.Final</version>
+      <version>7.42.0.Final</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -36,13 +36,13 @@
     <dependency>
       <groupId>org.optaplanner</groupId>
       <artifactId>optaplanner-persistence-jaxb</artifactId>
-      <version>7.19.0.Final</version>
+       <version>7.42.0.Final</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-api</artifactId>
-      <version>7.19.0.Final</version>
+      <version>7.42.0.Final</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -62,19 +62,25 @@
       <plugin>
         <groupId>org.kie</groupId>
         <artifactId>kie-maven-plugin</artifactId>
-        <version>7.19.0.Final</version>
+          <version>7.42.0.Final</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>
   </build>
+       <repositories>
+        <repository>
+            <id>Pymma-opensource</id>
+            <url>https://nexus.pymma-software.net/repository/opensource-maven</url>
+        </repository>
+    </repositories>
         <distributionManagement>
         <snapshotRepository>
             <id>pymma-snapshot</id>
-            <url>https://nexus.pymma-software.com/nexus/content/repositories/pymma-snapshot</url>
+            <url>https://nexus.pymma-software.net/repository/opensource-maven</url>
         </snapshotRepository>
         <repository>
             <id>pymma-release</id>
-            <url>https://nexus.pymma-software.com/nexus/content/repositories/pymma-release</url>
+            <url>https://nexus.pymma-software.net//repository/opensource-maven</url>
         </repository>
     </distributionManagement>
 </project>
