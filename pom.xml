@@ -36,7 +36,7 @@
     <dependency>
       <groupId>org.optaplanner</groupId>
       <artifactId>optaplanner-persistence-jaxb</artifactId>
-       <version>7.42.0.Final</version>
+       <version>8.6.0.Final</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
